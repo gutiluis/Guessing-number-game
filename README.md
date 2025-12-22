@@ -1,3 +1,10 @@
+Clone the repository:
+
+```bash
+git clone https://github.com/gutiluis/https://github.com/gutiluis/Techdegree-project-1/edit/main_number_guessing_game.git
+```
+python main.py
+
 # Number Guessing Game
 
 A simple console-based number guessing game written in Python. The player tries to guess a randomly chosen number within a limited number of attempts.
@@ -31,6 +38,8 @@ A simple console-based number guessing game written in Python. The player tries 
 
 ## What I Learned
 How to use the random library and import modules
+
+
 
 
 
