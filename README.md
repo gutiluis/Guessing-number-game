@@ -1,7 +1,7 @@
 Clone the repository:
 
 ```bash
-git clone https://github.com/gutiluis/https://github.com/gutiluis/Techdegree-project-1/edit/main_number_guessing_game.git
+git clone https://github.com/gutiluis/https://github.com/gutiluis/main_number_guessing_game.git
 ```
 
 
