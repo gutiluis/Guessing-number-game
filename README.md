@@ -22,7 +22,7 @@ Terminal-based number guessing game written in Python language. The player tries
 
 ---
 
-## How to Play within the terminal shell
+## How to Play within the terminal
 
 1. python guessing_game.py
 2. The game selects a random number.
