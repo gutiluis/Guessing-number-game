@@ -25,8 +25,12 @@ A simple console-based number guessing game written in Python. The player tries 
 
 ---
 
-## Example Gameplay
+## Technologies used
+- Python
 
+
+## What I Learned
+How to use the random library and import modules
 
 
 
