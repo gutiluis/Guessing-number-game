@@ -24,7 +24,7 @@ Terminal-based number guessing game written in Python language. The player tries
 
 ## How to Play
 
-1. python main.py.
+1. python guessing_game.py
 2. The game selects a random number.
 3. Input your guess when prompted.
 4. The game will tell you if your guess is **too high**, **too low**, or **correct**.
