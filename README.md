@@ -3,7 +3,7 @@ Clone the repository:
 ```bash
 git clone https://github.com/gutiluis/https://github.com/gutiluis/Techdegree-project-1/edit/main_number_guessing_game.git
 ```
-python main.py
+
 
 # Number Guessing Game
 
@@ -24,7 +24,7 @@ A simple console-based number guessing game written in Python. The player tries 
 
 ## How to Play
 
-1. Run the game in your terminal.
+1. python main.py.
 2. The game selects a random number.
 3. Input your guess when prompted.
 4. The game will tell you if your guess is **too high**, **too low**, or **correct**.
