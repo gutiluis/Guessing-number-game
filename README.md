@@ -7,7 +7,7 @@ git clone https://github.com/gutiluis/https://github.com/gutiluis/Techdegree-pro
 
 # Number Guessing Game
 
-A simple console-based number guessing game written in Python. The player tries to guess a randomly chosen number within a limited number of attempts.
+Terminal-based number guessing game written in Python language. The player tries to guess a randomly chosen number within a limited number of attempts.
 
 ---
 
