@@ -1,10 +1,3 @@
-Clone the repository:
-
-```bash
-git clone /https://github.com/gutiluis/Techdegree-project-1.git
-```
-
-
 # Number Guessing Game
 
 Terminal-based number guessing game written in Python language. The player tries to guess a randomly chosen number within a limited number of attempts.
@@ -39,6 +32,12 @@ Terminal-based number guessing game written in Python language. The player tries
 ## What I Learned
 How to use the random library and import modules
 
+
+Clone the repository:
+
+```bash
+git clone /https://github.com/gutiluis/Techdegree-project-1.git
+```
 
 
 
