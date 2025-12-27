@@ -1,6 +1,5 @@
 ## How it works:
 
-# How to Play within the terminal
 - python guessing_game.py
 2. The game selects a random number.
 3. Input your guess when prompted.
