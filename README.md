@@ -1,8 +1,18 @@
+## How it works:
+
+# How to Play within the terminal
+- python guessing_game.py
+2. The game selects a random number.
+3. Input your guess when prompted.
+4. The game will tell you if your guess is **too high**, **too low**, or **correct**.
+5. You continue guessing until you find the number or run out of attempts.
+
+
 # Number Guessing Game
 
 Terminal-based number guessing game written in Python language. The player tries to guess a randomly chosen number within a limited number of attempts.
 
----
+-----
 
 ## Features
 
@@ -15,23 +25,21 @@ Terminal-based number guessing game written in Python language. The player tries
 
 ---
 
-## How to Play within the terminal
-
-1. python guessing_game.py
-2. The game selects a random number.
-3. Input your guess when prompted.
-4. The game will tell you if your guess is **too high**, **too low**, or **correct**.
-5. You continue guessing until you find the number or run out of attempts.
-
----
-
 ## Technologies used
+
 - Python
 
+-----
 
 ## What I Learned
+
 How to use the random library and import modules
 
+###
+
+-----
+
+##
 
 Clone the repository:
 
