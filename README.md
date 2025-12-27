@@ -45,13 +45,3 @@ Clone the repository:
 ```bash
 git clone /https://github.com/gutiluis/Techdegree-project-1.git
 ```
-
-
-
-
-
-#
- The number guessing game or pick a number game.
- import the random library, as so the sys, time.
- allows user selection.
- while loops.
