@@ -29,7 +29,10 @@ Terminal-based number guessing game written in Python language. The player tries
 
 ## What I Learned
 
-- How to use the random library and import modules
+- How to use the random, sys and time libraries
+- How to allow user selection.
+- How to use a while loop.
+
 
 -----
 
@@ -40,13 +43,3 @@ Clone the repository:
 ```bash
 git clone /https://github.com/gutiluis/Techdegree-project-1.git
 ```
-
-
-
-
-
-#
- The number guessing game or pick a number game.
- import the random library, as so the sys, time.
- allows user selection.
- while loops.
