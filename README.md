@@ -6,8 +6,6 @@
 4. The game will tell you if your guess is **too high**, **too low**, or **correct**.
 5. You continue guessing until you find the number or run out of attempts.
 
-# Number Guessing Game
-
 Terminal-based number guessing game written in Python language. The player tries to guess a randomly chosen number within a limited number of attempts.
 
 -----
@@ -37,7 +35,7 @@ Terminal-based number guessing game written in Python language. The player tries
 
 -----
 
-## What I Learned
+## Skills Learned
 
 How to use the random library and import modules
 
