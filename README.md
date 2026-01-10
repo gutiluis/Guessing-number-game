@@ -71,5 +71,5 @@ How to use the random library and import modules
 Clone the repository:
 
 ```bash
-git clone /https://github.com/gutiluis/Techdegree-project-1.git
+git clone https://github.com/gutiluis/Techdegree-project-1.git
 ```
