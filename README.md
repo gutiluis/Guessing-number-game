@@ -1,16 +1,39 @@
 ## How it works:
 
+Within the terminal run:
 - python guessing_game.py
-2. The game selects a random number.
-3. Input your guess when prompted.
-4. The game will tell you if your guess is **too high**, **too low**, or **correct**.
-5. You continue guessing until you find the number or run out of attempts.
 
-# Number Guessing Game
 
-Terminal-based number guessing game written in Python language. The player tries to guess a randomly chosen number within a limited number of attempts.
+import random module to generate the winning number.
+provides a welcome message.
+store a random number within the games range and store it within a variable.
+continous guess prompting using a while loop until the user guesses correctly.
+Provide Correct Feedback
+Using conditional statements, checks if the player provides an incorrect guess. 
+They should be told if their guess is higher or lower than the answer. This is so they can narrow down their guesses.
 
----
+Display the Score.
+displays the amount of guesses it takes the player to guess correctly.
+Increase this value whenever the player provides an incorrect guess.
+After the game ends, show the number of attempts it took.
+Display a Goodbye Message
+Handle Errors and Exceptions
+catch exceptions and report the errors to the user in a meaningful way. For example, non-number and floating-point number guesses should be handled with an exception to make sure the app won't crash.
+
+
+Pick and make a guess of a number between 1 and 10. 
+Reply whether the guess is too high or too low. 
+Their next guess is based on previous input. T
+he game ends when the player guesses the correct number. 
+Try to do this in the lowest number of possible attempts. 
+
+
+-----
+
+#####
+
+-----
+
 
 ## Features:
 
@@ -21,25 +44,32 @@ Terminal-based number guessing game written in Python language. The player tries
 - Congratulates the player if they guess correctly.
 - Ends the game if the player exceeds the maximum number of guesses.
 
----
+-----
 
-## Technologies used
-
-- Python
-
-## What I Learned
-
-- How to use the random, sys and time libraries
-- How to allow user selection.
-- How to use a while loop.
-
+####
 
 -----
 
-##
+## Technologies used:
+
+- Python
+
+-----
+
+###
+
+-----
+
+## Skills Learned:
+
+How to use the random library and import modules
+
+-----
+
+###
 
 Clone the repository:
 
 ```bash
-git clone /https://github.com/gutiluis/Techdegree-project-1.git
+git clone https://github.com/gutiluis/Techdegree-project-1.git
 ```
