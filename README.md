@@ -1,10 +1,7 @@
 ## How it works:
 
 Within the terminal run:
-- python3 -m venv venv
-- source venv/bin/activate
-- pip install -r requirements.txt
-- python3 app.py
+- python3 guessing_game.py
 
 
 import random module to generate the winning number.
@@ -29,27 +26,6 @@ Reply whether the guess is too high or too low.
 Their next guess is based on previous input. T
 he game ends when the player guesses the correct number. 
 Try to do this in the lowest number of possible attempts. 
-
-# Flask API
-app.py handles the random number, guesses, and session(cookies) tracking per player with flask
-
-session is a special dictionary that lets you store data per user across multiple requests
-
-Session HTTP is stateless: every request is independent. If you reload the page or make a new Ajax request, the server has no memory of previous requests.
-
-Receives user input from the frontend via Ajax (/guess endpoint)
-
-Keeps track of game state in Flask session (random_number, guesses, player_name) must be stored
-
-Sends responses back to the frontend as JSON
-
-The frontend displays messages in the browser instead of the terminal
-
-# jquery frontend
-User enters name. clicks Start Game. Flask creates session with random number & guess count.
-User enters a guess. jQuery sends it via Ajax. Flask checks and returns feedback.
-If correct session resets new number generated automatically.
-Page updates dynamically, no reloads needed.
 
 -----
 
