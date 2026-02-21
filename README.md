@@ -36,7 +36,7 @@ Try to do this in the lowest number of possible attempts.
 
 ## Features:
 
-- Generates a random number between a specified range (default 1–100).
+- Generates a random number between a specified range (default 1–10).
 - Prompts the player to guess the number.
 - Provides feedback if the guess is too high or too low.
 - Tracks the number of attempts.
