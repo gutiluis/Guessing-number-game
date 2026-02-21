@@ -27,6 +27,15 @@ Their next guess is based on previous input. T
 he game ends when the player guesses the correct number. 
 Try to do this in the lowest number of possible attempts. 
 
+# Flask API
+app.py handles the random number, guesses, and session(cookies) tracking per player with flask
+
+
+# jquery frontend
+User enters name. clicks Start Game. Flask creates session with random number & guess count.
+User enters a guess. jQuery sends it via Ajax. Flask checks and returns feedback.
+If correct session resets new number generated automatically.
+Page updates dynamically, no reloads needed.
 
 -----
 
