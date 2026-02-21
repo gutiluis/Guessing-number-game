@@ -1,6 +1,6 @@
 """
-Python Development Techdegree
-Project 1 - The Number Guessing Game
+Python Development
+Project Name - The Number Guessing Game
 --------------------------------
 """
 
@@ -19,9 +19,10 @@ def start_game(player_name):
 
     random_number = random.randint(1, 10)
     guesses = 0
-    user_guess = None
+    max_number_of_attempts = 5
+    guessing = True
 
-    while user_guess != random_number:
+    while guessing:
         try:
             user_guess = int(input("Guess a number between 1 and 10: "))
             if user_guess < 1 or user_guess > 10:
@@ -30,16 +31,20 @@ def start_game(player_name):
 
             guesses += 1
 
-            if user_guess < random_number:
+            if user_guess == random_number:
+                guessing = False
+                print(f"Congratulations! It took you {guesses} attempts. The number was {random_number}.")
+            elif guesses >= max_number_of_attempts:
+                guessing = False
+                print(f"Out of attempts! The number was {random_number}.")
+            elif user_guess < random_number:
                 print("Wrong. It's higher. Try again...")
-            elif user_guess > random_number:
+            else:
                 print("Wrong. It's lower. Try again...")
 
         except ValueError as err:
             print("Enter a valid number from 1 to 10.")
             print(f"({err})")
-
-    print(f"Congratulations! It took you {guesses} attempts. The number was {random_number}.")
 
 def continue_game(player_name):
     while True:
