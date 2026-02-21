@@ -73,9 +73,12 @@ Page updates dynamically, no reloads needed.
 
 -----
 
-## Technologies used:
+## Technologies:
 
 - Python
+- jQuery
+- JavaScript
+- Flask
 
 -----
 
