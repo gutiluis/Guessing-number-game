@@ -86,16 +86,21 @@ Page updates dynamically, no reloads needed.
 
 -----
 
-## Skills Learned:
+## Skills:
 
-How to use the random library and import modules
+How to use the random library and import modules.
+How to get a function value out of its inner local scope to use in another function.
+How to run flask WSGI and use cookie sessions.
 
 -----
 
 ###
 
+-----
+
+
 Clone the repository:
 
 ```bash
-git clone https://github.com/gutiluis/Techdegree-project-1.git
+git clone https://github.com/gutiluis/Guessing-number-game.git
 ```
