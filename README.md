@@ -36,7 +36,7 @@ Try to do this in the lowest number of possible attempts.
 
 ## Features:
 
-- Generates a random number between a specified range (default 1–10).
+- Generates a random number between 1 through 10.
 - Prompts the player to guess the number.
 - Provides feedback if the guess is too high or too low.
 - Tracks the number of attempts.
@@ -49,7 +49,7 @@ Try to do this in the lowest number of possible attempts.
 
 -----
 
-## Technologies used:
+## Technologies:
 
 - Python
 
@@ -59,7 +59,7 @@ Try to do this in the lowest number of possible attempts.
 
 -----
 
-## Skills Learned:
+## Skills:
 
 How to use the random library and import modules
 
@@ -69,7 +69,25 @@ How to use the random library and import modules
 
 -----
 
-Clone the repository:
+## Web-Version Branch
+
+There is a Web-Version branch with a Flask web interace for this game.
+
+The web-version branch has:
+A web interface for guessing the number
+Flask-based routes api, templates with jQuery and JavaScript
+Browser-based gameplay
+
+To acces switch branches:
+- git checkout web-version
+
+-----
+
+###
+
+-----
+
+Clone the repo:
 
 ```bash
 git clone https://github.com/gutiluis/Guessing-number-game.git
