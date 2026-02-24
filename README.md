@@ -30,12 +30,48 @@ Their next guess is based on previous input. T
 he game ends when the player guesses the correct number. 
 Try to do this in the lowest number of possible attempts. 
 
+
+# tests implementation
+# .github workflows actions
+github actions for pytest within a .yml file
+
+- Any push to testing branch runs tests automatically.
+- PRs to main or web-version branches must pass python-tests.yml jobs test before merging.
+- Flask tests will only run if Flask is installed — no need to separate workflows.
+
+- Always push testing branch first to run pytest. then merge into main or web-version to ensure CI pases first
+- CI(Continous Integration)
+Use CI for:
+- pushing code to GitHub
+- opening a pull request
+And CI wil automatically:
+- Download your repo
+- Install dependencies
+- Runs tests (like pytest)
+- Reports pass / fail
+
+
+
+# setup.py
+
+
 # Flask API
 app.py handles the random number, guesses, and session(cookies) tracking per player with flask
 
 session is a special dictionary that lets you store data per user across multiple requests
 
+A Flask session is client-side (in browser cookies). Not private-readable per user. Less secure. Size limitation smaller than Redis. Not for production apps, not for scalability.
+
+With cookies can query by key and the key will be on the client side.
+
+You may just keep the identifier in the cookie but store the rest in redis and you get the details by that identifier.
+
 Session HTTP is stateless: every request is independent. If you reload the page or make a new Ajax request, the server has no memory of previous requests.
+
+why is less secure a session cookie?
+Even if the cookie session data is encrypted, the user could still roll back their cookie to a previous state (unless you start encoding one-time IDs etc)
+
+the cookie stores the user state
 
 Receives user input from the frontend via Ajax (/guess endpoint)
 
