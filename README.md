@@ -1,8 +1,8 @@
-## How it works:
+>![WARNING]
+>CURRENTLY UNDER DEVELOPMENT
 
-Within the terminal run:
-- python3 guessing_game.py
 
+# GUESSING NUMBER GAME
 
 import random module to generate the winning number.
 provides a welcome message.
@@ -27,14 +27,15 @@ Their next guess is based on previous input. T
 he game ends when the player guesses the correct number. 
 Try to do this in the lowest number of possible attempts. 
 
------
 
-#####
+## How it works:
+```
+python3 guessing_game.py
+```
 
------
+---
 
-
-## Features:
+## Features
 
 - Generates a random number between 1 through 10.
 - Prompts the player to guess the number.
@@ -43,31 +44,19 @@ Try to do this in the lowest number of possible attempts.
 - Congratulates the player if they guess correctly.
 - Ends the game if the player exceeds the maximum number of guesses.
 
------
+---
 
-####
-
------
-
-## Technologies:
+## Tech-Stack
 
 - Python
 
------
+---
 
-###
+## Skills
 
------
+- How to use the random library and import modules
 
-## Skills:
-
-How to use the random library and import modules
-
------
-
-###
-
------
+---
 
 ## Web-Version Branch
 
@@ -81,14 +70,20 @@ Browser-based gameplay
 To acces switch branches:
 - git checkout web-version
 
------
+---
 
-###
+## Contributing
 
------
+If you are interested in reporting/fixing issues and contributing directly to the code base, please see CONTRIBUTING.md for more information on what we're looking for and how to get started.
 
-Clone the repo:
+---
 
-```bash
-git clone https://github.com/gutiluis/Guessing-number-game.git
-```
+## Community
+
+Info on reporting bugs, getting help, finding third-party tools and sample apps, and more can be found on the Community page.
+
+---
+
+## License
+
+[MIT LICENSE](LICENSE)

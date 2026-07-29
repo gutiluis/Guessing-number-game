@@ -1,7 +1,11 @@
+#!/usr/bin/env python3
+
+# file: guessing_game.py
+# descr:
+
 """
 Python Development
 Project Name - The Number Guessing Game
---------------------------------
 """
 
 import random
