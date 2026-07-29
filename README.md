@@ -2,7 +2,7 @@
 >CURRENTLY UNDER DEVELOPMENT
 
 
-# GUESSING NUMBER GAME
+# Guessing Number Game in python
 
 import random module to generate the winning number.
 provides a welcome message.
