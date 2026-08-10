@@ -1,3 +1,6 @@
+> [!WARNING]
+> CURRENTLY UNDER DEVELOPMENT
+
 # Guessing Number game with jQuery
 
 ## Flask API
