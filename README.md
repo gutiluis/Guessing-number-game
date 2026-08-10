@@ -28,7 +28,7 @@ he game ends when the player guesses the correct number.
 Try to do this in the lowest number of possible attempts. 
 
 
-## How it works:
+## How it works
 ```
 python3 guessing_game.py
 ```
@@ -54,22 +54,24 @@ python3 guessing_game.py
 
 ## Skills
 
-- How to use the random library and import modules
+- Random library and import modules
 
 ---
 
 ## Web-Version Branch
 
-There is a Web-Version branch with a Flask web interace for this game.
+There is a Web-Version branch with a Flask web interface for this game.
 
 The web-version branch has:****
 A web interface for guessing the number
 Flask-based routes api, templates with jQuery and JavaScript
 Browser-based gameplay
 
-To acces switch branches:
-- git checkout web-version
+To access switch branches:
 
+```
+git checkout web-version
+```
 ---
 
 ## Contributing
