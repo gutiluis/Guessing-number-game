@@ -24,21 +24,12 @@ Guess the winning number in as few attempts as possible!
 ---
 
 ## How it works
+
 ```
 git clone https://github.com/gutiluis/Guessing-number-game.git
 cd ~/Guessing-number-game/
 python3 guessing_game.py
 ```
-
----
-
-## Features
-
-- Random secret number within a defined range.
-- Prompts the player to guess the number.
-- Provides feedback.
-- Tracks the number of attempts.
-- Ends the game if the player exceeds the maximum number of guesses.
 
 ---
 
