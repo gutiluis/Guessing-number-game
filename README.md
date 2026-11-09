@@ -2,22 +2,24 @@
 >CURRENTLY UNDER DEVELOPMENT
 
 
-# Guessing Number Game
+## Number Guessing Game
 
-Programmatically generate the winning number.
-Provides a welcome message.
-Store a random number within the game range and store it within a variable.
-Continuous prompting until the user guesses.
-Checks if the player provides an incorrect guess if their guess is higher or lower than the answer. 
-This is so they can narrow down their guesses.
+A command-line game where the player attempts to guess a randomly generated number within a predefined range.
 
-Display the guess.
-Displays the amount of guesses it takes the player to guess correctly.
-Increase this value whenever the player provides an incorrect guess.
-After the game ends, show the number of attempts it took.
-Display a Goodbye Message.
+### Features
 
-Try to do this in the lowest number of possible attempts. 
+- Generates a random winning number at the beginning of each game.
+- Displays a welcome message to introduce the player to the game.
+- Prompts the player continuously until the correct number is guessed.
+- Provides hints indicating whether the player's guess is higher or lower than the winning number.
+- Tracks the number of incorrect guesses made throughout the game.
+- Displays the total number of attempts required to guess the correct number.
+- Generates a new random number for each game.
+- Displays a goodbye message when the game ends.
+
+### Objective
+
+Guess the winning number in as few attempts as possible!
 
 ---
 
