@@ -27,7 +27,7 @@ Guess the winning number in as few attempts as possible!
 
 ```
 git clone https://github.com/gutiluis/Guessing-number-game.git
-cd ~/Guessing-number-game/
+cd Guessing-number-game/
 python3 guessing_game.py
 ```
 
