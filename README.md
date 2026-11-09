@@ -2,7 +2,7 @@
 >CURRENTLY UNDER DEVELOPMENT
 
 
-# Guessing Number Game in python
+# Guessing Number Game
 
 import random module to generate the winning number.
 provides a welcome message.
@@ -27,9 +27,12 @@ Their next guess is based on previous input. T
 he game ends when the player guesses the correct number. 
 Try to do this in the lowest number of possible attempts. 
 
+---
 
 ## How it works
 ```
+git clone https://github.com/gutiluis/Guessing-number-game.git
+cd ~/Guessing-number-game/
 python3 guessing_game.py
 ```
 
