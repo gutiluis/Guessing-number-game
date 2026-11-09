@@ -1,12 +1,8 @@
 #!/usr/bin/env python3
 
 # file: guessing_game.py
-# descr:
+# descr: The Number Guessing Game
 
-"""
-Python Development
-Project Name - The Number Guessing Game
-"""
 
 import random
 import sys
