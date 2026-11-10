@@ -11,6 +11,7 @@ const guessInput = document.querySelector("#guess");
 const welcomeMessage = document.querySelector("#welcome-message");
 const feedback = document.querySelector("#feedback");
 const attemptsDisplay = document.querySelector("#attempts");
+const MAX_ATTEMPTS = 5;
 
 let playerName = "";
 let secretNumber = 0;
@@ -63,6 +64,11 @@ function checkGuess(guess) {
 
     guessInput.value = "";
     guessInput.focus();
+
+    if (attempts >= MAX_ATTEMPTS && guess !== secretNumber) {
+        feedback.textContent = `Game over! The number was ${secretNumber}.`;
+        guessButton.disabled = true;
+    }
 }
 
 startForm.addEventListener("submit", (event) => {
