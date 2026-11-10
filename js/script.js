@@ -13,10 +13,22 @@ const feedback = document.querySelector("#feedback");
 const attemptsDisplay = document.querySelector("#attempts");
 const MAX_ATTEMPTS = 5;
 
-let playerName = "";
+let playerName = localStorage.getItem("playerName") || "";
 let secretNumber = 0;
 let attempts = 0;
 let gameOver = false;
+
+function saveScore(playerName, attempts) {
+    const scores = JSON.parse(
+        localStorage.getItem("guessingGameScores") || "[]",
+    );
+    scores.push({
+        playerName,
+        attempts,
+        date: new Date().toISOString(),
+    });
+    localStorage.setItem("guessingGameScores", JSON.stringify(scores));
+}
 
 function startGame() {
     secretNumber = Math.floor(Math.random() * 10) + 1;
@@ -26,6 +38,7 @@ function startGame() {
     attemptsDisplay.textContent = attempts;
     feedback.textContent = "Make your first guess!";
     welcomeMessage.textContent = `Good luck, ${playerName}!`;
+    localStorage.setItem("playerName", playerName);
 
     guessInput.value = "";
     guessInput.disabled = false;
@@ -50,6 +63,7 @@ function checkGuess(guess) {
 
     if (guess === secretNumber) {
         feedback.textContent = `Congratulations, ${playerName}! You guessed it in ${attempts} attempts.`;
+        saveScore(playerName, attempts);
 
         gameOver = true;
         guessInput.disabled = true;
