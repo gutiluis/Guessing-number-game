@@ -12,7 +12,7 @@ const welcomeMessage = document.querySelector("#welcome-message");
 const feedback = document.querySelector("#feedback");
 const attemptsDisplay = document.querySelector("#attempts");
 const MAX_ATTEMPTS = 5;
-
+// player name local storage key
 let playerName = localStorage.getItem("playerName") || "";
 let secretNumber = 0;
 let attempts = 0;
@@ -46,6 +46,7 @@ function startGame() {
 
     startSection.hidden = true;
     gameSection.hidden = false;
+    guessInput.hidden = false;
 
     guessInput.focus();
 }
@@ -81,7 +82,8 @@ function checkGuess(guess) {
 
     if (attempts >= MAX_ATTEMPTS && guess !== secretNumber) {
         feedback.textContent = `Game over! The number was ${secretNumber}.`;
-        guessButton.disabled = true;
+        restartButton.hidden = false;
+        guessInput.hidden = true;
     }
 }
 
