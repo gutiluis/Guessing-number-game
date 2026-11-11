@@ -1,3 +1,4 @@
+// html element dom references
 const startForm = document.querySelector("#start-form");
 const guessForm = document.querySelector("#guess-form");
 const restartButton = document.querySelector("#restart-button");
@@ -11,7 +12,10 @@ const guessInput = document.querySelector("#guess");
 const welcomeMessage = document.querySelector("#welcome-message");
 const feedback = document.querySelector("#feedback");
 const attemptsDisplay = document.querySelector("#attempts");
+const scoresList = document.getElementById("scores-list");
+const scoresSection = document.getElementById("scores-section");
 const MAX_ATTEMPTS = 5;
+
 // player name local storage key
 let playerName = localStorage.getItem("playerName") || "";
 let secretNumber = 0;
@@ -51,6 +55,24 @@ function startGame() {
     guessInput.focus();
 }
 
+function displayScores() {
+    const scores = JSON.parse(
+        localStorage.getItem("guessingGameScores") || "[]",
+    );
+
+    scoresSection.hidden = scores.length === 0;
+    scoresList.innerHTML = "";
+    if (scores.length === 0) {
+        scoresList.textContent = "No scores available yet.";
+        return;
+    }
+    scores.forEach((score) => {
+        const li = document.createElement("li");
+        li.textContent = `${score.playerName} - ${score.attempts} attempts`;
+        scoresList.appendChild(li);
+    });
+}
+
 function checkGuess(guess) {
     if (gameOver) return;
 
@@ -65,6 +87,7 @@ function checkGuess(guess) {
     if (guess === secretNumber) {
         feedback.textContent = `Congratulations, ${playerName}! You guessed it in ${attempts} attempts.`;
         saveScore(playerName, attempts);
+        displayScores();
 
         gameOver = true;
         guessInput.disabled = true;
@@ -104,3 +127,4 @@ guessForm.addEventListener("submit", (event) => {
 });
 
 restartButton.addEventListener("click", startGame);
+displayScores();
