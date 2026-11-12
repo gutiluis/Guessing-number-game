@@ -1,4 +1,4 @@
-// html element dom references
+// html element DOM references
 const startForm = document.querySelector("#start-form");
 const guessForm = document.querySelector("#guess-form");
 const restartButton = document.querySelector("#restart-button");
@@ -14,6 +14,7 @@ const feedback = document.querySelector("#feedback");
 const attemptsDisplay = document.querySelector("#attempts");
 const scoresList = document.getElementById("scores-list");
 const scoresSection = document.getElementById("scores-section");
+const scores = [];
 const MAX_ATTEMPTS = 5;
 
 // player name local storage key
@@ -22,16 +23,18 @@ let secretNumber = 0;
 let attempts = 0;
 let gameOver = false;
 
+// dissapear iframe memory management garbage collector references. instead of window.localStorage
 function saveScore(playerName, attempts) {
-    const scores = JSON.parse(
-        localStorage.getItem("guessingGameScores") || "[]",
+    const existingScore = scores.find(
+        (score) => score.playerName.toLowerCase() === playerName.toLowerCase(),
     );
-    scores.push({
-        playerName,
-        attempts,
-        date: new Date().toISOString(),
-    });
-    localStorage.setItem("guessingGameScores", JSON.stringify(scores));
+    if (existingScore) {
+        if (attempts < existingScore.attempts) {
+            existingScore.attempts = attempts;
+        }
+    } else {
+        scores.push({ playerName, attempts });
+    }
 }
 
 function startGame() {
@@ -56,16 +59,14 @@ function startGame() {
 }
 
 function displayScores() {
-    const scores = JSON.parse(
-        localStorage.getItem("guessingGameScores") || "[]",
-    );
-
     scoresSection.hidden = scores.length === 0;
     scoresList.innerHTML = "";
+
     if (scores.length === 0) {
         scoresList.textContent = "No scores available yet.";
         return;
     }
+
     scores.forEach((score) => {
         const li = document.createElement("li");
         li.textContent = `${score.playerName} - ${score.attempts} attempts`;
